@@ -71,12 +71,12 @@ This text provides the list of coarse action segments for each sequence. The col
 
 - - -
 ### coarse_labels/{`assembly/disassembly`}_{sequence}.txt
-This text provides the list of coarse action segments with their correponding annotations that are split between training and validation. The columns are:
+This text provides the list of coarse action segments with their correponding annotations that are split between training and validation. These annotations have been withheld from the test split for challenges purposes. The columns are:
 | Column Number | Column name | Type | example | Description | 
 |---------------|-------------|------|---------|-------------|
 | 0 | start_frame | str | 000006833 | #frame **(@30fps)** when the coarse action starts |
 | 1 | end_frame | str | 000007554 | #frame **(@30fps)** when the coarse action ends |
-| 2 | action_cls | str | attempt to screw chassis | action name of the segment (withheld from the test split for challenge purposes) |
+| 2 | action_cls | str | attempt to screw chassis | action name of the segment |
 - - -
 
 ### coarse_seq_views.txt
