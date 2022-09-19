@@ -6,6 +6,7 @@ The files present under the `fine-grained-annotations` folder are:
 - `train.csv`
 - `validation.csv`
 - `test.csv`
+- `test_challenge.csv`
 - `head_actions.txt`
 
 ## File structure
@@ -55,6 +56,10 @@ This csv provides the list of fine-grained action segments for the test set. The
 | end_frame | int | 111 | #frame **(@30fps)** when the fine-grained action ends |
 | is_shared | bool | 0 | does the toy appear in the training set? <br> `0` : not shared <br> `1` : shared <br> not shared corresponds to zero-shot classes|
 | is_RGB | bool | 1 | is the view fixed (RGB) or monochrome? <br> `0` : monochrome <br> `1` : fixed (RGB)|
+
+- - -
+### test_challenge.csv
+This csv file provides the exact test split on which our [3D Action Recognition challenge](https://codalab.lisn.upsaclay.fr/competitions/5256) is evaluated.
 
 - - -
 
