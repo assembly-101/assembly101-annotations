@@ -7,7 +7,7 @@ The annotatations are divided into 2 granularities:
 - [`coarse-annotations`](/coarse-annotations): used for Temporal Action Segmentation benchmark
 
 ```
-Frame numbers in all the annotations are provided after extracting them from the raw video at 30fps.
+Raw videos are 60fps but the frame numbers in all the annotations are provided after extracting them from the raw video at 30fps.
 ```
 
 If you use our dataset, kindly cite:
