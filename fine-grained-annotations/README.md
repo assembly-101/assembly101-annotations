@@ -6,7 +6,6 @@ The files present under the `fine-grained-annotations` folder are:
 - `train.csv`
 - `validation.csv`
 - `test.csv`
-- `test_challenge.csv`
 - `head_actions.txt`
 
 ## File structure
@@ -25,8 +24,8 @@ This csv provides the list of actions and its mapping to the corresponding verbs
 
 - - -
 
-### train.csv / validation.csv
-This csv provides the list of fine-grained action segments with their correponding annotations that are split between training and validation. The columns are:
+### train.csv / validation.csv / test.csv
+This csv provides the list of fine-grained action segments with their correponding annotations that are split between training, validation and test. The columns are:
 | Column name | Type | example | Description | 
 |-------------|------|---------|-------------|
 | id | int | 7 | row (segment) index |
@@ -46,20 +45,10 @@ This csv provides the list of fine-grained action segments with their correpondi
 
 - - -
 
-### test.csv
-This csv provides the list of fine-grained action segments for the test set. The labels have been withheld for challenge purposes. The columns are:
-| Column name | Type | example | Description | 
-|-------------|------|---------|-------------|
-| id | int | 7 | row (segment) index |
-| video | str | nusar-2021_action_both_9033-a30_9033_user_id_2021-02-04_131528/C10404_rgb.mp4 | the video name in the format of {sequence_name}/{view_name}.mp4 |
-| start_frame | int | 84 | #frame **(@30fps)** when the fine-grained action starts |
-| end_frame | int | 111 | #frame **(@30fps)** when the fine-grained action ends |
-| is_shared | bool | 0 | does the toy appear in the training set? <br> `0` : not shared <br> `1` : shared <br> not shared corresponds to zero-shot classes|
-| is_RGB | bool | 1 | is the view fixed (RGB) or monochrome? <br> `0` : monochrome <br> `1` : fixed (RGB)|
-
-- - -
-### test_challenge.csv
+### test_challenge.csv (deprecated)
 This csv file provides the exact test split on which our [3D Action Recognition challenge](https://codalab.lisn.upsaclay.fr/competitions/5256) is evaluated.
+
+**Note:** The challenge on Codalab has ended. Please refer to [paperswithcode](https://paperswithcode.com/sota/3d-action-recognition-on-assembly101) for the 3D Action Recognition leaderboard. Feel free to update your `test.csv` results there.
 
 - - -
 
